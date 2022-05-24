@@ -45,7 +45,7 @@ def st1():
 
     elif inp == '2':
 
-        r = requests.get('https://cyine.xyz/ebsi/go2.json')
+        r = requests.get('https://cyine.xyz/ebsi/go2.json').json()
         print(f"1. 국어 - 자료 수 : {len(r['kor'])}개")       
         print(f"2. 영어 - 자료 수 : {len(r['eng'])}개") 
         print(f"3. 수학 - 자료 수 : {len(r['math'])}개") 
